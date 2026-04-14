@@ -98,10 +98,10 @@ const Navbar = () => {
     <>
       <header
         ref={navRef}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white border-b border-gray-100 ${
           scrolled
-            ? "bg-background/95 backdrop-blur-xl shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)] border-b border-border/30"
-            : "bg-transparent border-b border-transparent"
+            ? "shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]"
+            : ""
         }`}
       >
         <div className="container flex items-center justify-between h-20">
@@ -129,9 +129,7 @@ const Navbar = () => {
                   className={`relative px-4 py-2.5 text-sm font-medium transition-all duration-300 rounded-lg flex items-center gap-1 group ${
                     activeMega === item.label
                       ? "text-primary"
-                      : scrolled
-                      ? "text-foreground/80 hover:text-foreground"
-                      : "text-primary-foreground/80 hover:text-primary-foreground"
+                      : "text-foreground/80 hover:text-foreground"
                   }`}
                 >
                   <span className="relative">
@@ -159,20 +157,12 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center gap-2">
             <button
               onClick={() => setSearchOpen(!searchOpen)}
-              className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-                scrolled
-                  ? "text-foreground/60 hover:text-foreground hover:bg-secondary"
-                  : "text-primary-foreground/60 hover:text-primary-foreground hover:bg-primary-foreground/10"
-              }`}
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 text-foreground/60 hover:text-foreground hover:bg-secondary"
             >
               <Search size={18} />
             </button>
             <button
-              className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-                scrolled
-                  ? "text-foreground/60 hover:text-foreground hover:bg-secondary"
-                  : "text-primary-foreground/60 hover:text-primary-foreground hover:bg-primary-foreground/10"
-              }`}
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 text-foreground/60 hover:text-foreground hover:bg-secondary"
             >
               <Globe size={18} />
             </button>
@@ -187,25 +177,17 @@ const Navbar = () => {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`lg:hidden relative w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-300 ${
-              scrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
+            className="lg:hidden relative w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-300 text-foreground"
           >
             <div className="relative w-5 h-4 flex flex-col justify-between">
               <span
-                className={`block h-0.5 rounded-full transition-all duration-300 origin-center ${
-                  scrolled ? "bg-foreground" : "bg-primary-foreground"
-                } ${mobileOpen ? "rotate-45 translate-y-[7px]" : ""}`}
+                className={`block h-0.5 rounded-full transition-all duration-300 origin-center bg-foreground ${mobileOpen ? "rotate-45 translate-y-[7px]" : ""}`}
               />
               <span
-                className={`block h-0.5 rounded-full transition-all duration-300 ${
-                  scrolled ? "bg-foreground" : "bg-primary-foreground"
-                } ${mobileOpen ? "opacity-0 scale-x-0" : ""}`}
+                className={`block h-0.5 rounded-full transition-all duration-300 bg-foreground ${mobileOpen ? "opacity-0 scale-x-0" : ""}`}
               />
               <span
-                className={`block h-0.5 rounded-full transition-all duration-300 origin-center ${
-                  scrolled ? "bg-foreground" : "bg-primary-foreground"
-                } ${mobileOpen ? "-rotate-45 -translate-y-[7px]" : ""}`}
+                className={`block h-0.5 rounded-full transition-all duration-300 origin-center bg-foreground ${mobileOpen ? "-rotate-45 -translate-y-[7px]" : ""}`}
               />
             </div>
           </button>

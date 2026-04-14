@@ -18,17 +18,6 @@ const HeroSection = () => {
             <source src="https://res.cloudinary.com/dnoxzfkyd/video/upload/v1776201124/hero-bg_gzvzb3.mp4" type="video/mp4" />
           </video>
 
-          {/* Red triangles on the right */}
-          <div className="absolute top-0 right-0 h-full">
-            <svg width="120" height="100%" viewBox="0 0 120 300" fill="none" preserveAspectRatio="none">
-              <polygon points="60,0 120,80 60,80" fill="hsl(0 78% 52%)" />
-              <polygon points="90,40 120,80 90,120 60,80" fill="hsl(0 78% 52% / 0.85)" />
-              <polygon points="40,80 90,120 40,160 0,120" fill="hsl(0 78% 52%)" />
-              <polygon points="80,120 120,160 80,200 40,160" fill="hsl(0 78% 52% / 0.8)" />
-              <polygon points="50,160 100,200 50,240" fill="hsl(0 78% 52% / 0.7)" />
-              <polygon points="80,200 120,240 80,280 40,240" fill="hsl(0 78% 52%)" />
-            </svg>
-          </div>
         </div>
 
         {/* Text content below image */}
@@ -66,19 +55,6 @@ const HeroSection = () => {
           <source src="https://res.cloudinary.com/dnoxzfkyd/video/upload/v1776201124/hero-bg_gzvzb3.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-foreground/75" />
-
-        {/* Red triangle decorations */}
-        <div className="absolute top-20 right-0">
-          <svg width="400" height="600" viewBox="0 0 400 600" fill="none">
-            <polygon points="200,0 400,200 200,200" fill="hsl(0 78% 52%)" />
-            <polygon points="300,100 400,200 300,300 200,200" fill="hsl(0 78% 52% / 0.9)" />
-            <polygon points="150,200 300,300 150,400 0,300" fill="hsl(0 78% 52%)" />
-            <polygon points="300,300 400,400 300,500 200,400" fill="hsl(0 78% 52% / 0.85)" />
-            <polygon points="200,200 300,300 200,400 100,300" fill="white" fillOpacity="0.15" />
-            <polygon points="350,350 400,400 350,450 300,400" fill="hsl(0 78% 52%)" />
-            <polygon points="250,400 350,500 250,500" fill="hsl(0 78% 52% / 0.7)" />
-          </svg>
-        </div>
 
         <div className="relative container pt-32 pb-20">
           <div className="max-w-2xl">
