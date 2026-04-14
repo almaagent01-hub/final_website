@@ -177,7 +177,6 @@ const Navbar = () => {
               <Globe size={18} />
             </button>
             <a
-              href="#"
               className="ml-2 px-5 py-2.5 bg-primary text-primary-foreground text-sm font-medium rounded-full hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
               href="#contact"
             >
