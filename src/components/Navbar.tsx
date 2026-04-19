@@ -199,14 +199,6 @@ const Navbar = () => {
             </div>
           </button>
 
-          {/* Decorative circle menu icon */}
-          <div className="lg:hidden w-11 h-11 rounded-full border-2 border-gray-300 flex items-center justify-center ml-1 cursor-default">
-            <div className="flex flex-col gap-1">
-              <span className="block w-4 h-0.5 bg-primary rounded-full" />
-              <span className="block w-4 h-0.5 bg-primary rounded-full" />
-              <span className="block w-2.5 h-0.5 bg-primary rounded-full" />
-            </div>
-          </div>
         </div>
 
         {/* Search bar overlay */}
