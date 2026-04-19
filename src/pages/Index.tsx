@@ -6,6 +6,7 @@ import SustainabilitySection from "@/components/SustainabilitySection";
 import NewsSection from "@/components/NewsSection";
 import CareersSection from "@/components/CareersSection";
 import Footer from "@/components/Footer";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <SustainabilitySection />
       <NewsSection />
       <CareersSection />
+      <ContactSection />
       <Footer />
     </div>
   );

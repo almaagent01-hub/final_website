@@ -7,34 +7,34 @@ import news3 from "@/assets/news-3.jpg";
 const newsItems = [
   {
     img: news1,
-    category: "Company News",
-    title: "NTS Group Secures Major Infrastructure Contract in the Gulf Region",
-    date: "12 Mar 2026",
+    category: "Completed Project",
+    title: "Al-Noor Commercial Tower — Full MEP & Interior Fit-Out, Bishkek",
+    date: "Jan 2026",
   },
   {
     img: news2,
-    category: "Company News",
-    title: "NTS Group Expands Energy Division with Strategic Partnership",
-    date: "28 Feb 2026",
+    category: "Completed Project",
+    title: "Riverside Villa Complex — 24-Unit Residential Development, Osh Region",
+    date: "Sep 2025",
   },
   {
     img: news3,
-    category: "Industry Event",
-    title: "NTS Group Hosts Annual Safety & Innovation Summit",
-    date: "15 Jan 2026",
+    category: "Completed Project",
+    title: "Industrial Warehouse & Logistics Hub — 8,500 m² Facility, Tokmok",
+    date: "Apr 2025",
   },
 ];
 
 const NewsSection = () => {
   return (
-    <section id="projects" className="py-24 bg-background">
+    <section id="projects" className="py-16 md:py-24 bg-background">
       <div className="container">
         <ScrollReveal>
-          <span className="section-label">News & Insights</span>
-          <h2 className="section-heading mt-4 mb-12">Stay Informed with NTS Group</h2>
+          <span className="section-label">Our Projects</span>
+          <h2 className="section-heading mt-4 mb-12">Recent Work by NTS International</h2>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {newsItems.map((item, i) => (
             <ScrollReveal key={i} delay={i * 150}>
               <a
@@ -71,7 +71,7 @@ const NewsSection = () => {
               href="#"
               className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all group"
             >
-              All News & Insights
+              View All Projects
               <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
           </div>

@@ -12,44 +12,44 @@ import capInnovation from "@/assets/cap-innovation.jpg";
 const capabilities = [
   {
     num: "01",
-    title: "Energy & Chemicals",
+    title: "Construction & Infrastructure",
     description:
-      "Delivering complex energy and chemical processing facilities with precision engineering, balancing industrial progress with environmental responsibility.",
-    img: capEnergy,
+      "Full-service commercial and residential construction — from ground-breaking to handover. We specialize in office complexes, industrial facilities, and custom-built homes with turnkey delivery.",
+    img: capBuildings,
   },
   {
     num: "02",
-    title: "Renewables & Power",
+    title: "Engineering & Electromechanical",
     description:
-      "Pioneering sustainable energy solutions through solar, wind, and hydroelectric projects that power communities and reduce carbon footprints.",
-    img: capRenewables,
+      "Comprehensive MEP (mechanical, electrical, plumbing) and electromechanical installations for residential, commercial, and industrial clients, ensuring code-compliant, long-lasting systems.",
+    img: capEnergy,
   },
   {
     num: "03",
-    title: "Pipelines & Infrastructure",
+    title: "Oil, Gas & Energy",
     description:
-      "Constructing thousands of kilometers of pipelines across challenging terrains, connecting resources to communities with unmatched reliability.",
+      "End-to-end services for upstream and downstream energy projects — from pipeline installation and facility construction to maintenance, commissioning, and decommissioning.",
     img: capPipelines,
   },
   {
     num: "04",
-    title: "Buildings & Structures",
+    title: "Trading & Supply",
     description:
-      "Creating iconic buildings and landmark structures that showcase architectural excellence and engineering innovation at every scale.",
-    img: capBuildings,
+      "Reliable procurement and supply of construction materials, industrial equipment, and specialized tools. We source globally and deliver locally, ensuring quality at every step.",
+    img: capRenewables,
   },
   {
     num: "05",
-    title: "Transportation",
+    title: "Logistics & Transportation",
     description:
-      "Building world-class transportation infrastructure including airports, highways, bridges, ports, and mass transit systems that keep the world moving.",
+      "Managed fleet operations and freight solutions for project-critical cargo. Our logistics team ensures timely, safe delivery of equipment and materials across all project sites.",
     img: capTransport,
   },
   {
     num: "06",
-    title: "Innovation & Technology",
+    title: "Manpower & HR Services",
     description:
-      "Leveraging cutting-edge technology and digital tools to drive innovation, enhance safety, and improve efficiency across all our operations.",
+      "Skilled workforce deployment and HR consultancy for engineering, construction, and industrial sectors. We source, screen, and place professionals who meet your exact project requirements.",
     img: capInnovation,
   },
 ];

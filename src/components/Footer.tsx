@@ -1,22 +1,18 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-section-dark text-section-dark-foreground py-16">
       <div className="container">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="grid grid-cols-2 gap-0.5">
-                <div className="w-3 h-3 bg-primary triangle-pattern" />
-                <div className="w-3 h-3 bg-primary triangle-pattern" />
-                <div className="w-3 h-3 bg-primary triangle-pattern" />
-                <div className="w-3 h-3 bg-section-dark-foreground triangle-pattern" />
-              </div>
-              <span className="text-lg font-bold">NTS Group</span>
+            <div className="mb-4">
+              <img src={logo} alt="NTS Group of Companies" className="h-16 w-auto object-contain" />
             </div>
             <p className="text-section-dark-foreground/60 text-sm leading-relaxed">
-              Engineering excellence and innovation across the globe for over five decades.
+              Full-service general contracting and engineering group delivering quality
+              projects on time since 2020.
             </p>
           </div>
 
@@ -32,38 +28,47 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Capabilities</h4>
+            <h4 className="font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2 text-sm text-section-dark-foreground/60">
-              <li><a href="#" className="hover:text-primary transition-colors">Energy & Chemicals</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Renewables & Power</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Pipelines</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Buildings</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Transportation</a></li>
+              <li><a href="#capabilities" className="hover:text-primary transition-colors">Construction & Infrastructure</a></li>
+              <li><a href="#capabilities" className="hover:text-primary transition-colors">Engineering & Electromechanical</a></li>
+              <li><a href="#capabilities" className="hover:text-primary transition-colors">Oil, Gas & Energy</a></li>
+              <li><a href="#capabilities" className="hover:text-primary transition-colors">Trading & Supply</a></li>
+              <li><a href="#capabilities" className="hover:text-primary transition-colors">Logistics & Transportation</a></li>
+              <li><a href="#capabilities" className="hover:text-primary transition-colors">Manpower & HR Services</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-3 text-sm text-section-dark-foreground/60">
               <li className="flex items-center gap-2">
                 <Mail size={14} className="text-primary shrink-0" />
-                info@ntsgroup.com
+                <a href="mailto:salamponnad22@gmail.com" className="hover:text-primary transition-colors">salamponnad22@gmail.com</a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={14} className="text-primary shrink-0" />
-                +1 (555) 123-4567
+                <a href="tel:+996223571108" className="hover:text-primary transition-colors">+996 223 571 108</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <MessageCircle size={14} className="text-[#25D366] shrink-0" />
+                <a href="https://wa.me/996223571108" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors">WA: +996 223 571 108</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <MessageCircle size={14} className="text-[#25D366] shrink-0" />
+                <a href="https://wa.me/996555302287" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors">WA: +996 555 302 287</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={14} className="text-primary shrink-0 mt-0.5" />
-                Corporate Headquarters, Business District
+                123 Business Centre, Chui Avenue, Bishkek, Kyrgyzstan
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-section-dark-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-section-dark-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-center md:text-left">
           <p className="text-sm text-section-dark-foreground/40">
-            © 2026 NTS Group of Companies. All rights reserved.
+            © 2026 NTS International Group of Company. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-section-dark-foreground/40">
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -60,7 +60,7 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight;
+    @apply font-heading font-bold tracking-tight;
   }
 }
 
@@ -69,10 +69,10 @@
     @apply text-sm font-semibold uppercase tracking-[0.2em] text-primary;
   }
   .section-heading {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-foreground;
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground;
   }
   .section-heading-light {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-section-dark-foreground;
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-section-dark-foreground;
   }
   .triangle-pattern {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);

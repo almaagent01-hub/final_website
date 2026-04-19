@@ -4,7 +4,7 @@ import sustainabilityBg from "@/assets/sustainability-bg.jpg";
 
 const SustainabilitySection = () => {
   return (
-    <section id="sustainability" className="relative py-24 overflow-hidden">
+    <section id="sustainability" className="relative py-16 md:py-24 overflow-hidden">
       <img
         src={sustainabilityBg}
         alt="Renewable energy project"
@@ -28,14 +28,15 @@ const SustainabilitySection = () => {
           <ScrollReveal>
             <span className="section-label">Sustainability</span>
             <h2 className="section-heading-light mt-4 mb-6">
-              Committed to a Sustainable Future
+              Building Responsibly for Future Generations
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={150}>
             <p className="text-section-dark-foreground/80 text-lg leading-relaxed mb-8">
-              At NTS Group, sustainability drives every decision we make. We are dedicated 
-              to building responsibly — minimizing environmental impact while creating 
-              infrastructure that serves communities for generations.
+              At NTS International, sustainability is woven into every project decision.
+              We prioritize energy-efficient designs, responsible material sourcing, and
+              low-impact construction methods — delivering infrastructure that serves
+              communities today while protecting the environment for generations to come.
             </p>
             <a
               href="#"
