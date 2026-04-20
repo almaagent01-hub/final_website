@@ -1,17 +1,44 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = "godaddy_smtp";
+const TEMPLATE_ID = "template_zqpgmeq";
+const PUBLIC_KEY = "Lqwl1WEz0Vhrw5SKt";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError("");
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          phone: form.phone,
+          subject: form.subject,
+          message: form.message,
+        },
+        { publicKey: PUBLIC_KEY }
+      );
+      setSubmitted(true);
+    } catch {
+      setError("Failed to send message. Please try again or email us directly.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -151,11 +178,15 @@ const ContactSection = () => {
                   />
                 </div>
 
+                {error && (
+                  <p className="text-sm text-red-500 text-center">{error}</p>
+                )}
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 py-4 bg-primary text-primary-foreground rounded-xl font-semibold hover:opacity-90 transition-opacity"
+                  disabled={sending}
+                  className="w-full flex items-center justify-center gap-2 py-4 bg-primary text-primary-foreground rounded-xl font-semibold hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {sending ? "Sending..." : "Send Message"}
                   <Send size={16} />
                 </button>
               </form>
