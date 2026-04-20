@@ -30,8 +30,8 @@ const Index = () => {
       <ContactSection />
       <Footer />
 
-      {/* Fixed floating action buttons — right side */}
-      <div className="fixed right-4 bottom-8 z-50 flex flex-col items-end gap-3">
+      {/* Fixed floating action buttons — right side, vertically centred */}
+      <div className="fixed right-4 top-1/2 -translate-y-1/2 z-50 flex flex-col items-end gap-3">
 
         {/* WhatsApp number popup */}
         {waOpen && (
