@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -71,9 +72,9 @@ const Footer = () => {
             © 2026 NTS International Group of Company. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-section-dark-foreground/40">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Use</a>
-            <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-use" className="hover:text-primary transition-colors">Terms of Use</Link>
+            <Link to="/cookie-policy" className="hover:text-primary transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>
